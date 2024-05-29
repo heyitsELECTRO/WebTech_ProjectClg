@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE users SYSTEM "index.dtd"> -->
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd">
+    <user id="in">
+        <name>Indira Umarji</name>
+        <username>Indira</username>
+        <password>a</password>
+    </user>
+    <user id="pr">
+        <name>Prathap Kumar</name>
+        <username>Prathap</username>
+        <password>a</password>
+    </user> 
+    <user id="ni">
+        <name>Nita Kulkarni</name>
+        <username>Nita</username>
+        <password>a</password>
+    </user>
+    <user id="hod">
+        <name>S M Joshi</name>
+        <username>hod</username>
+        <password>a</password>
+    </user>
+</users>

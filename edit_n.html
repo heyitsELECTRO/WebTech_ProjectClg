@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #FFF2D9; margin: 0px;">
+    <header>
+        <fieldset style="background-color: #F8C794; border-radius: 10px;">
+            <div style="display: flex; align-items: center;">
+                    <img src="./assets/logo.png" alt="SDMCET LOGO" height="45px" width="40px">
+                        SDMCET
+                    <div style="margin-left: 1050px;">
+                        <span style="margin-right: 20px;"><a href="contact.html"><button style="border-radius: 50px;">Contact Us</button></a></span>
+                        <span style="margin-right: 20px;"><a href="about.html"><button style="border-radius: 50px;">About Us</button></a></span>
+                        <span style="margin-right: 20px;"><a href="index.html"><button style="border-radius: 50px;">LogOut</button></a></span>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </header>
+    <main>
+        <fieldset style="border-radius: 10px;">
+            <legend>CSE Faculty</legend>
+            <div align="center">
+                <img src="./assets/profiler.jpeg" style="border-radius: 50px;" height="200px" width="200px" alt="Profile Photo of Indira Umarji">
+                <p><b>Name :- NITA KULKARNI<b></p>
+                <p><b>Designation :- Assistant Professor<b></p>
+            </div>
+
+            <div align="center">
+                <fieldset style="border-radius: 10px; width : 50%">
+                    <legend align="center">Academics</legend>
+                <table border>
+                    <tr>
+                        <th colspan="2">Sl.No</th>
+                        <th colspan="4">Subject Name</th>
+                        <th colspan="2">Division</th>
+                        <th colspan="2">Credits</th>
+                        <th colspan="2">Completion</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">1</td>
+                        <td colspan="4">PCPI</td>
+                        <td colspan="2">A</td>
+                        <td colspan="2">3</td>
+                        <td colspan="2">100%</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">2</td>
+                        <td colspan="4">PCPI LAB</td>
+                        <td colspan="2">A</td>
+                        <td colspan="2">1</td>
+                        <td colspan="2">80%</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">3</td>
+                        <td colspan="4">PCPI LAB</td>
+                        <td colspan="2">B</td>
+                        <td colspan="2">1</td>
+                        <td colspan="2">80%</td>
+                    </tr>
+                    <tr id="a"></tr>
+                </table>
+                </fieldset>
+            </div>
+            <br>
+            <div align="center">
+                <fieldset style="border-radius: 10px; width : 50%;">
+                    <legend align="center">Non-Academics</legend>
+                    <table border>
+                        <tr>
+                            <th colspan="2">Sl.No.</th>
+                            <th colspan="4">Activity/Designation</th>
+                            <th colspan="4">Workshops/Meetings Conducted</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2">1</td>
+                            <td colspan="4">GDSC LEAD</td>
+                            <td colspan="4">5</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">2</td>
+                            <td colspan="4">Event Coordinator</td>
+                            <td colspan="4">4</td>
+                        </tr>
+                        <tr id="b"></tr>
+                    </table>
+                </fieldset>
+             </div>
+        </fieldset>
+    </main>
+
+    <footer align="center">
+        <fieldset>
+            <legend>Edit</legend>
+            <table>
+                <tr>
+                    <td><label for="">Choose the fields you need to edit:</label></td>
+                    <td><input type="checkbox" name="acad" value="1">Academics</td>
+                    <td><input type="checkbox" name="acad" value="2">Non-Academics</td>
+                </tr>
+                <tr>
+                    <td>For Academics :</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label for="">Enter Subject name: </label></td>
+                    <td><input type="text" id="sub"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Enter the division: </label></td>
+                    <td><input type="text" id="div"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Enter no.of Credits: </label></td>
+                    <td><input type="number" id="cre"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Enter Percentage of Completion </label></td>
+                    <td><input type="number" id="com"></td>
+                </tr>
+                <tr>
+                    <td>For Non-Academics :</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label for="">Enter the activity assigned :</label></td>
+                    <td><input type="text" id="act"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Enter no.of meetings conducted :</label></td>
+                    <td><input type="number" id="meet"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Apply" onclick="edit()"></td>
+                    <td>
+                        <input type="button" value="Reset" onclick="reset()">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+</footer>
+
+</body>
+</html>
+
+
+<script src="./edit.js"></script>
+<script>
+    function reset(){
+        window.location="edit_n.html";
+    }
+</script>
+
